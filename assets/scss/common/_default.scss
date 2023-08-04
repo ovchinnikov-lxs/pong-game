@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+    /**
+    UI STYLES (you can add rules of your design kit)
+     */
+    --ui-unit: 4px;
+    --ui-col: 40px;
+    --ui-accent-color: #28b20d;
+    --ui-secondary-color: #109ed5;
+    --ui-white-color: #fff;
+    --ui-black-color: #000;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--ui-black-color);
+}
