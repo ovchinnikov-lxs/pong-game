@@ -2,7 +2,6 @@
 
 ## Setup
 
-
 Click to "Use this template" in github
 
 ```bash

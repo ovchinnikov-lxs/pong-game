@@ -1,12 +1,13 @@
 <template>
     <div :class="$style.DefaultLayout">
-        <TheHeader :class="$style.header" />
+        <TheModal :class="$style.modal"/>
+        <TheHeader :class="$style.header"/>
 
         <div :class="$style.container">
-            <slot />
+            <slot/>
         </div>
 
-        <TheFooter :class="$style.footer" />
+        <TheFooter :class="$style.footer"/>
     </div>
 </template>
 
@@ -17,6 +18,16 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .header,

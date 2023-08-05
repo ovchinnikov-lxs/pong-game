@@ -1,7 +1,9 @@
-const DEFAULT_TABLE = [0, 0];
 export const useScore = defineStore('score', {
     state: () => ({
-        table: DEFAULT_TABLE,
+        table: [0, 0],
+        gameTime: 3,
+        timeLeft: 3,
+        winner: '',
     }),
 
     actions: {
@@ -10,7 +12,12 @@ export const useScore = defineStore('score', {
         },
 
         restart() {
-            this.table = DEFAULT_TABLE;
+            this.table = [0, 0];
+            this.winner = '';
+        },
+
+        setWinner(payload: string) {
+            this.winner = payload;
         },
     },
 });

@@ -39,7 +39,7 @@
         "vite-plugin-stylelint": "^4.2.0",
         "vue-tsc": "^1.6.5"
     },
-     "overrides": {
+    "overrides": {
         "vue": "latest"
     }
 }
