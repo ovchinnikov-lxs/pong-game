@@ -1,8 +1,8 @@
 export const useScore = defineStore('score', {
     state: () => ({
         table: [0, 0],
-        gameTime: 3,
-        timeLeft: 3,
+        gameTime: 60,
+        timeLeft: 60,
         winner: '',
     }),
 
