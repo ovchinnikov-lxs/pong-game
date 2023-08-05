@@ -1,0 +1,1 @@
+import{P as t,Q as a,R as s}from"./entry.e2ba4bfa.js";const n=t("score",{state:()=>({table:[0,0],gameTime:60,timeLeft:60,winner:""}),actions:{changeScore(e){this.table[e]++},restart(){this.table=[0,0],this.winner=""},setWinner(e){this.winner=e}}}),o=a({key:0,data:null,open(e){this.key++,this.data=s(e)},close(){this.data=null}});export{o as a,n as u};
