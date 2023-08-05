@@ -1,18 +1,6 @@
-<script setup lang="ts">
-// UiKit Components
-import { UiButton } from '@ovchinnikov-lxs-frontend/ui-kit';
-
-const counter = useCounter();
-</script>
 <template>
     <div class="IndexPage">
-        <div :class="$style.wrapper">
-            Index Page
-
-            <UiButton @click="counter++">
-                increment counter
-            </UiButton>
-        </div>
+        <PongTable :class="$style.wrapper"/>
     </div>
 </template>
 

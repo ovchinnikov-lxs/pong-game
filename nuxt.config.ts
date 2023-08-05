@@ -4,6 +4,7 @@ import stylelint from 'vite-plugin-stylelint';
 export default defineNuxtConfig({
     app: {
         head: {
+            title: 'PONG',
             charset: 'utf-16',
             viewport: 'width=device-width, initial-scale=1',
             meta: [
@@ -18,7 +19,23 @@ export default defineNuxtConfig({
 
     modules: [
         '@nuxtjs/svg-sprite',
+        '@nuxtjs/google-fonts',
+        '@pinia/nuxt',
     ],
+
+    imports: {
+        dirs: ['./stores'],
+    },
+
+    pinia: {
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+    },
+
+    googleFonts: {
+        families: {
+            VT323: true,
+        },
+    },
 
     router: {
         options: {
